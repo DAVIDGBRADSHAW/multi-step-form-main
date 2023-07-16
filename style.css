@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: hsl(217, 50%, 95%);
+  font-size: 16px;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  width: 375px;
+  height: 172px;
+  margin-top: 7px;
+  background-image: url("./assets/images/bg-sidebar-mobile.svg");
+  display: flex;
+  justify-content: center;
+}
+#header > div {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-around;
+}
+.pNum {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px hsl(231, 100%, 99%);
+  color: hsl(231, 100%, 99%);
+  border-radius: 20px;
+  margin-top: 30px;
+}
+#content {
+  position: absolute;
+  width: 340px;
+  height: 440px;
+  margin: auto;
+  top: 106px;
+  overflow: hidden;
+}
+
+.holdLabel {
+  width: 272px;
+  margin: auto;
+  padding-top: 25px;
+}
+.par {
+  line-height: 1.5em;
+  padding: 5px 0px 18px;
+  color: hsl(231, 11%, 63%);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+}
+
+/*==================================================================*/
+
+/****************** Form *****************/
+#resform > input {
+  display: block;
+  width: 272px;
+  height: 38px;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: solid 1px hsl(229, 24%, 87%);
+  border-radius: 4px;
+  font-weight: 600;
+}
+#resform > label {
+  display: block;
+  width: 80%;
+  margin: auto;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+::placeholder {
+  color: hsl(231, 11%, 63%);
+}
+
+.formCont {
+  width: 340px;
+  height: 368px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0px 3px 21px -17px;
+}
+/****************** End of Form *****************/
+
+/*==================================================================*/
+
+/****************** Plans Cont *****************/
+
+#planCont {
+  width: 340px;
+  height: 440px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0px 3px 21px -17px;
+}
+
+#planCont .planPar {
+  line-height: 1.5em;
+  padding: 5px 0px 0px;
+  color: hsl(231, 11%, 63%);
+}
+
+.planType {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 5px;
+  width: 272px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px hsl(229, 24%, 87%);
+  border-radius: 7px;
+  padding: 10px 0px 10px;
+  cursor: pointer;
+}
+.planType div:first-of-type {
+  width: 50px;
+  margin-left: 15px;
+}
+.info div:first-of-type img {
+  width: 70%;
+}
+.planType .txt {
+  line-height: 20px;
+}
+.planType .txt p:first-of-type {
+  font-weight: 600;
+}
+.planType .txt p:nth-child(2) {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.8rem;
+}
+
+.yerlyVisible {
+  font-size: 0.7rem;
+  color: hsl(213, 96%, 18%);
+  line-height: 15px;
+  display: none;
+}
+/****************** End of Plans Cont *****************/
+
+/*==================================================================*/
+
+/****************** Btn Montthly  || Yearly *****************/
+
+#planCont > div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 272px;
+  margin: auto;
+  margin-top: 15px;
+  height: 50px;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 7px;
+}
+
+#planCont > div:last-of-type > #btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: hsl(213, 96%, 18%);
+  cursor: pointer;
+}
+
+#planCont > div:last-of-type > #btn > div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 100%);
+  transition: margin-left 0.3s linear;
+}
+
+.trans {
+  margin-left: 5px;
+}
+
+.textColor {
+  font-weight: 600;
+  color: hsl(213, 96%, 18%);
+}
+
+/****************** End of Btn *******************************/
+
+/*==================================================================*/
+
+/****************** Pick adds-on *******************************/
+
+.planType > div:first-of-type > input {
+  margin-top: 9px;
+  margin-left: 3px;
+  width: 23px;
+  height: 21px;
+}
+
+.planType > div:last-of-type > .prc {
+  line-height: 40px;
+  font-size: 0.8rem;
+  color: hsl(243, 100%, 62%);
+  margin: auto;
+  margin-right: 10px;
+}
+.planType {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.addOn > .planType > .cheBox {
+  width: 30px;
+}
+
+.addOn > .planType > .cheBox input {
+  cursor: pointer;
+}
+
+.addOn > .planType .txt {
+  line-height: 20px;
+}
+.addOn > .planType .txt p:first-of-type {
+  font-size: 0.8rem;
+}
+.addOn > .planType .txt p:last-of-type {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.65rem;
+}
+
+/****************** End adds-on *******************************/
+
+/*==================================================================*/
+
+/****************** Finishing Up *******************************/
+#fUp > .planType {
+  grid-template-columns: 3fr 1fr;
+}
+
+#fUp > .planType > .txt {
+  width: auto;
+}
+
+#change {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: hsl(231, 11%, 63%);
+}
+#fUp > .planType > .txt .fTxt {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+#arcade {
+  font-size: 0.9rem;
+}
+
+#fUp > .planType > .txt > .lht {
+  font-size: 0.9rem;
+}
+#fUp > .lh > div:last-of-type .prc {
+  line-height: 20px;
+}
+#finalOne,
+#finalTwo {
+  font-weight: 600;
+}
+
+#fUp > div:last-of-type > #finalTwo {
+  font-size: 1.3rem;
+  line-height: 20px;
+}
+#finalOne {
+  color: black;
+}
+#fUp > .planType {
+  background-color: hsl(217, 100%, 97%);
+}
+
+#fUp > #totalP {
+  background-color: hsl(0, 0%, 100%);
+  border: hsl(0, 0%, 100%);
+}
+
+#fUp > .planType {
+  margin-top: 0px;
+  border: hsl(0, 0%, 100%);
+  border-radius: 0px;
+}
+
+#fUp > div:nth-child(2) {
+  border-radius: 7px 7px 0 0;
+  border-bottom: solid 1px hsl(229, 24%, 87%);
+}
+
+#fUp > div:nth-child(4) {
+  border-radius: 0 0 7px 7px;
+}
+/****************** End Finishing Up *******************************/
+/*==================================================================*/
+
+/****************** Thank you Page *******************************/
+#finishd > img {
+  display: block;
+  width: 80px;
+  margin: auto;
+  padding-top: 70px;
+}
+#finishd > .holdLabel > h1 {
+  text-align: center;
+}
+#finishd > .holdLabel > .par {
+  font-size: 0.9rem;
+  text-align: center;
+}
+/****************** End Thank you Page *******************************/
+
+/*==================================================================*/
+
+/****************** Botton Section*****************/
+.botton {
+  width: 375px;
+  height: 60px;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 395px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.botton span {
+  width: 90px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  color: hsl(231, 11%, 63%);
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.botton span:first-of-type {
+  color: hsl(0, 0%, 100%);
+}
+
+.botton span:last-of-type {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  margin-right: 10px;
+}
+
+/******************End of Botton Section*****************/
+.pageNum {
+  background-color: hsl(206, 94%, 87%);
+  color: black;
+}
+
+.print {
+  position: absolute;
+  width: 400px;
+  min-height: 100px;
+  opacity: 0px;
+  margin: auto;
+  top: -200px;
+  color: black;
+  background: hsl(206, 94%, 87%);
+  border-radius: 10px;
+  transition: opacity 0.7s linear;
+  text-align: center;
+  z-index: 150;
+}
+
+.print h3 {
+  margin-top: 20px;
+  padding: 35px;
+  text-align: center;
+}
+
+.print div {
+  top: 10px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  position: absolute;
+  background-image: url("./assets/images/icons8-close-window-48.png");
+  background-position: center;
+}
+
+/******************JS Dom Manipulation*****************/
+.message {
+  opacity: 100;
+  top: 100px;
+  z-index: 100;
+}
+.blockFrom {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+.display {
+  display: none;
+}
+
+.transEfect {
+  margin-left: 25px;
+}
+
+.bcolor {
+  background-color: hsl(206, 94%, 87%);
+  border: solid 2px hsl(243, 100%, 62%);
+}
+
+.dcolor {
+  background-color: hsl(206, 94%, 87%);
+  border-color: hsl(243, 100%, 62%);
+}
+
+.color {
+  color: hsl(231, 11%, 63%);
+}
+/******************End of JS Dom Manipulation*****************/
+
+@media (min-width: 375px) and (max-width: 477px) {
+}
