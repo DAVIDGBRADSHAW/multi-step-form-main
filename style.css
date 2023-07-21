@@ -65,6 +65,7 @@ ul {
   margin-top: 10px;
   font-size: 11px;
   text-align: center;
+  width: 350px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -387,7 +388,7 @@ ul {
   width: 375px;
   height: 647px;
   z-index: 30;
-  background-color: rgba(255, 0, 0, 0.219);
+  background-color: rgba(0, 0, 0, 0.562);
 }
 .display {
   display: none;
@@ -577,6 +578,9 @@ ul {
   }
 
   .blockFrom {
+    width: 900px;
+  }
+  .attribution {
     width: 900px;
   }
 }
