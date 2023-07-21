@@ -1,285 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="style.css" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <title>Frontend Mentor | Multi-step form</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Frontend Mentor | Multi-step form</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    
-    <div id="container">
-      <div></div>
-      <div class="print">
+</head>
+<body>
+  <div id="container">
+    <div></div>
+    <div class="print">
       <h3></h3>
       <div></div>
     </div>
-      <div id="header">
-        <div>
+    <div id="header">
+      <div>
+        <div class="row">
           <span class="pNum pageNum">1</span>
+          <div class="onliDesk">
+            <p>Step 1</p>
+            <p>Your Info</p>
+          </div>
+        </div>
+        <div class="row">
           <span class="pNum">2</span>
+          <div class="onliDesk">
+            <p>Step 2</p>
+            <p>Select Plan</p>
+          </div>
+        </div>
+        <div class="row">
           <span class="pNum">3</span>
+          <div class="onliDesk">
+            <p>Step 3</p>
+            <p>Add-ons</p>
+          </div>
+        </div>
+        <div class="row">
           <span class="pNum">4</span>
+          <div class="onliDesk">
+            <p>Step 4</p>
+            <p>Summary</p>
+          </div>
         </div>
       </div>
-      <section id="content">
-        <ul>
-          <!------------------- Form  --------------------->
-          <li>
-            <div class="formCont">
-              <div class="holdLabel">
-                <h1 class="h1">Personal info</h1>
-                <p class="par">
-                  Please provide your name, email address, and phone number.
-                </p>
-              </div>
-              <form action="" id="resform" method="post">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  name="Name"
-                  id="name"
-                  placeholder="e.g. Stephen King"
-                  required
-                />
-                <label for="email">Email address</label>
-                <input
-                  type="email"
-                  name="Email address"
-                  id="email"
-                  placeholder="e.g. stephenking@lorem.com"
-                  required
-                />
-                <label for="phone">Phone Number</label>
-                <input
-                  type="text"
-                  name="Phone Number"
-                  id="phone"
-                  placeholder="e.g. +353-83-567-8901"
-                  required
-                />
-              </form>
-            </div>
-          </li>
-          <!-------------------End of Form  --------------------->
-          <!-------------------Plans Type  ---------------------->
-
-          <li>
-            <div id="planCont">
-              <div class="holdLabel">
-                <h1 class="h1">Select your plan</h1>
-                <p class="planPar">
-                  You have the option of monthly or yearly billing
-                </p>
-              </div>
-
-              <div class="planType value" value = 9>
-                  <div><img src="./assets/images/icon-arcade.svg"></img></div>
-                  <div class="txt">
-                    <p>Arcade</p>
-                    <p>$9/mo</p>
-                    <p class="yerlyVisible">2 months free</p>
-                  </div>
-              </div>
-              <div class="planType value" value = 12>
-               <div><img src="./assets/images/icon-advanced.svg"></img></div>
-                  <div class="txt">
-                    <p>Advanced</p>
-                    <p>$12/mo</p>
-                    <p class="yerlyVisible">2 months free</p>
-                  </div>
-              </div>
-              <div class="planType value" value =15>
-                <div><img src="./assets/images/icon-pro.svg"></img></div>
-                  <div class="txt">
-                    <p>Pro</p>
-                    <p>$15/mo</p>
-                    <p class="yerlyVisible">2 months free</p>
-                  </div>
-              </div>
-                <div>
-                     <div class="textColor">Monthly</div> 
-                     <div id="btn"><div class="trans"></div></div>
-                     <div class="color textColor">Yearly</div>
-                </div>
-            </div>
-          </li>
-          <!-------------------End of Plans Type  --------------------->
-
-          <!-------------------Pick adds-on  -------------------------->
-
-           <li>
-            <div class="formCont addOn">
-              <div class="holdLabel">
-                <h1 class="h1">Pick add-ons</h1>
-                <p class="par">
-                  Add-ons help enhance your gaming experience.
-                </p>
-              </div>
-
-              <div class="planType boxJs" value="OnServ">
-                  <div class="cheBox" >
-                    <input type="checkbox" id="OnServ" name="OnServ" value=1>
-                  </div>
-                  <div class="txt">
-                    <p>Online service</p>
-                    <p>Access to multiplayer games</p>
-                  </div>
-                  <div>
-                    <p class="prc prc1">+$1/mo</p>
-                  </div>
-              </div>
-              <div class="planType boxJs" value="Lstor" >
-                <div class="cheBox">
-                    <input type="checkbox" id="Lstor" name="Lstor" value=2>
-                  </div>
-                  <div class="txt">
-                    <p>Larger storage</p>
-                    <p>AExtra 1TB of cloud save</p>
-                  </div>
-                  <div>
-                    <p class="prc prc1">+$2/mo</p>
-                  </div>
-              </div>
-              <div class="planType boxJs" value="Cprof">
-                  <div class="cheBox">
-                    <input type="checkbox" id="Cprof" name="Cprof" value=2>
-                  </div>
-                  <div class="txt">
-                    <p>Customizable Profile</p>
-                    <p>Custom theme on your profile</p>
-                  </div>
-                  <div>
-                    <p class="prc prc1">+$2/mo</p>
-                  </div>
-              </div>
-          </li>
-          <!------------------- End of Pick adds-on  --------------------->
-
-          <!------------------- Finishing Up  --------------------->
-          <li>
-            <div class="formCont addOn" id="fUp">
-              <div class="holdLabel">
-                <h1 class="h1">Finishin Up</h1>
-                <p class="par">
-                  Add-ons help enhance your gaming experience.
-                </p>
-              </div>
-
-              <div class="planType">
-                  <div class="txt">
-                    <p id="arcade">Arcade (Montly)</p>
-                    <p><a href="#" id="change">Change</a></p>
-                  </div>
-                  <div>
-                    <p class="prc prc2" id="finalOne">&nbsp $9/mo</p>
-                  </div>
-              </div>
-              <div class="planType display OnServ lh">
-                  <div class="txt">
-                    <p class="fTxt">Online service</p>
-                  </div>
-                  <div>
-                    <p class="prc prc2">+$1/mo</p>
-                  </div>
-              </div>
-              <div class="planType display Lstor lh">
-                  <div class="txt">
-                    <p class="fTxt">Large storage</p>
-                  </div>
-                  <div>
-                    <p class="prc prc2">+$2/mo</p>
-                  </div>
-              </div>
-                <div class="planType display Cprof lh" id="totalP">
-                  <div class="txt">
-                    <p class="fTxt">Total (per molnth)</p>
-                  </div>
-                  <div>
-                    <p class="prc prc2" id="finalTwo">+$12/mo</p>
-                  </div>
-              </div>
-          </li>
-          <!------------------- End Finishing Up  --------------------->
-          <!------------------- Confirm Subscription  --------------------->
-           <li>
-            <div class="formCont addOn" id="finishd">
-              <img src="./assets/images/icon-thank-you.svg" alt="Thank You Picture">
-              <div class="holdLabel">
-                <h1 class="h1">Thank you!</h1>
-                <p class="par">
-                  Thanks for confirming your subscription! We hope you have fun
-                  using our <br> platform. If you ever need support, <br> please feel free to email us
-                  at support@loremgaming.com
-                </p>
-              </div>
-             <div></div>
-             <div><h1></h1></div>
-            </div>
-          </li>
-  
-          
-          <!------------------- End Confirm Subscription  --------------------->
-           
-        </ul>
-      </section>
-      <section class="botton">
-        <span>Go Back</span>
-        <span>Next Step</span>
-      </section>
     </div>
-  
+    <section id="content">
+      <ul>
+        <!------------------- Form  -------------------------->
+        <li>
+          <div class="formCont">
+            <div class="holdLabel">
+              <h1 class="h1">Personal info</h1>
+              <p class="par">
+                Please provide your name, email address, and phone number.
+              </p>
+            </div>
+            <form action="" id="resform" method="post">
+              <label for="name">Name</label>
+              <input type="text" name="Name" id="name" placeholder="e.g. Stephen King" required />
+              <label for="email">Email address</label>
+              <input type="email" name="Email address" id="email" placeholder="e.g. stephenking@lorem.com" required />
+              <label for="phone">Phone Number</label>
+              <input type="text" name="Phone Number" id="phone" placeholder="e.g. +353-83-567-8901" required />
+            </form>
+          </div>
+        </li>
+        <!-------------------End of Form  --------------------->
+        <!-------------------Plans Type  ---------------------->
 
+        <li>
+          <div id="planCont">
+            <div class="holdLabel">
+              <h1 class="h1">Select your plan</h1>
+              <p class="planPar">
+                You have the option of monthly or yearly billing
+              </p>
+            </div>
+            <div id="planDesk">
+              <div class="planType value" value=9>
+                <div><img src="./assets/images/icon-arcade.svg"></img></div>
+                <div class="txt">
+                  <p class="pDesk">Arcade</p>
+                  <p class="pDesk">$9/mo</p>
+                  <p class="yerlyVisible">2 months free</p>
+                </div>
+              </div>
+              <div class="planType value" value=12>
+                <div><img src="./assets/images/icon-advanced.svg"></img></div>
+                <div class="txt">
+                  <p class="pDesk">Advanced</p>
+                  <p class="pDesk">$12/mo</p>
+                  <p class="yerlyVisible">2 months free</p>
+                </div>
+              </div>
+              <div class="planType value" value=15>
+                <div><img src="./assets/images/icon-pro.svg"></img></div>
+                <div class="txt">
+                  <p class="pDesk">Pro</p>
+                  <p class="pDesk">$15/mo</p>
+                  <p class="yerlyVisible">2 months free</p>
+                </div>
+              </div>
+            </div>
+            <div id="holdBtn">
+              <div class="textColor">Monthly</div>
+              <div id="btn">
+                <div class="trans"></div>
+              </div>
+              <div class="color textColor">Yearly</div>
+            </div>
+            <div id="border"></div>
 
+          </div>
 
+        </li>
+        <!-------------------End of Plans Type  --------------->
 
+        <!-------------------Pick adds-on  -------------------->
 
+        <li>
+          <div class="formCont addOn">
+            <div class="holdLabel">
+              <h1 class="h1">Pick add-ons</h1>
+              <p class="par">
+                Add-ons help enhance your gaming experience.
+              </p>
+            </div>
 
+            <div class="planType boxJs" value="OnServ">
+              <div class="cheBox">
+                <input type="checkbox" id="OnServ" name="OnServ" value=1>
+              </div>
+              <div class="txt">
+                <p>Online service</p>
+                <p>Access to multiplayer games</p>
+              </div>
+              <div>
+                <p class="prc prc1">+$1/mo</p>
+              </div>
+            </div>
+            <div class="planType boxJs" value="Lstor">
+              <div class="cheBox">
+                <input type="checkbox" id="Lstor" name="Lstor" value=2>
+              </div>
+              <div class="txt">
+                <p>Larger storage</p>
+                <p>AExtra 1TB of cloud save</p>
+              </div>
+              <div>
+                <p class="prc prc1">+$2/mo</p>
+              </div>
+            </div>
+            <div class="planType boxJs" value="Cprof">
+              <div class="cheBox">
+                <input type="checkbox" id="Cprof" name="Cprof" value=2>
+              </div>
+              <div class="txt">
+                <p>Customizable Profile</p>
+                <p>Custom theme on your profile</p>
+              </div>
+              <div>
+                <p class="prc prc1">+$2/mo</p>
+              </div>
+            </div>
+        </li>
+        <!------------------- End of Pick adds-on  ---------->
 
+        <!------------------- Finishing Up  ----------------->
+        <li>
+          <div class="formCont addOn" id="fUp">
+            <div class="holdLabel">
+              <h1 class="h1">Finishin Up</h1>
+              <p class="par">
+                Add-ons help enhance your gaming experience.
+              </p>
+            </div>
 
-    <!-- Step 5 start 
+            <div class="planType">
+              <div class="txt">
+                <p id="arcade">Arcade (Montly)</p>
+                <p><a href="#" id="change">Change</a></p>
+              </div>
+              <div>
+                <p class="prc prc3" id="finalOne">&nbsp $9/mo</p>
+              </div>
+            </div>
+            <div class="planType display OnServ lh">
+              <div class="txt">
+                <p class="fTxt">Online service</p>
+              </div>
+              <div>
+                <p class="prc prc2">+$1/mo</p>
+              </div>
+            </div>
+            <div class="planType display Lstor lh">
+              <div class="txt">
+                <p class="fTxt">Large storage</p>
+              </div>
+              <div>
+                <p class="prc prc2">+$2/mo</p>
+              </div>
+            </div>
+            <div class="planType display Cprof lh">
+              <div class="txt">
+                <p class="fTxt">Customizable profile</p>
+              </div>
+              <div>
+                <p class="prc prc2">+$2/mo</p>
+              </div>
+            </div>
+            <div class="planType  lh" id="totalP">
+              <div class="txt">
+                <p class="fTxt">Total (per molnth)</p>
+              </div>
+              <div>
+                <p class="prc prc2">+$12/mo</p>
+              </div>
+            </div>
+        </li>
+        <!------------------- End Finishing Up  -------------->
+        <!------------------- Confirm Subscription  ---------->
+        <li>
+          <div class="formCont addOn" id="finishd">
+            <img src="./assets/images/icon-thank-you.svg" alt="Thank You Picture">
+            <div class="holdLabel">
+              <h1 class="h1">Thank you!</h1>
+              <p class="par">
+                Thanks for confirming your subscription! We hope you have fun
+                using our platform. If you ever need support, please feel free to email us
+                at support@loremgaming.com
+              </p>
+            </div>
+            <div></div>
+            <div>
+              <h1></h1>
+            </div>
+        </li>
+        <!------------------- End Confirm Subscription  ------>
+      </ul>
+    </section>
+    <div class="botton">
+      <span>Go Back</span>
+      <span>Next Step</span>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/ThiagoAndo" target="_blank">Thiago Freitas</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
 
-    Thank you! Thanks for confirming your subscription! We hope you have fun
-    using our platform. If you ever need support, please feel free to email us
-    at support@loremgaming.com.-->
-
-    <!-- Step 5 end -->
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
-    <script src="script.js"></script>
-  </body>
 </html>
