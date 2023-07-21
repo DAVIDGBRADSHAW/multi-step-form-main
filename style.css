@@ -345,12 +345,12 @@ ul {
 }
 .print {
   position: absolute;
-  width: 350px;
+  width: 375px;
   min-height: 100px;
   opacity: 0px;
   margin: auto;
   top: -400px;
-  left: 50px;
+  left: 10px;
   color: black;
   background: hsl(207, 27%, 74%);
   border-radius: 10px;
@@ -384,7 +384,7 @@ ul {
 }
 .blockFrom {
   position: absolute;
-  width: 1000px;
+  width: 375px;
   height: 647px;
   z-index: 30;
   background-color: rgba(0, 0, 0, 0.562);
@@ -574,5 +574,9 @@ ul {
   #finishd .holdLabel .h1,
   .par {
     padding-right: 110px;
+  }
+
+  .blockFrom {
+    width: 900px;
   }
 }
