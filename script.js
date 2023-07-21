@@ -46,6 +46,7 @@ window.addEventListener("load", () => {
   let planBcolor = "Arcade";
   let last = "(Montly)";
   //   Information Box ===============================================
+  responsive(x);
   printMessagge();
   function printMessagge(msg, num) {
     msg =
@@ -343,15 +344,13 @@ window.addEventListener("load", () => {
       responsive(x);
     }, 100);
   });
-  responsive(x);
+ 
   function responsive(maxWidth) {
     if (maxWidth.matches) {
       displayTxt("none");
-      left = 0;
       leftL = 350;
     } else {
       displayTxt("block");
-      left = 0;
       leftL = 500;
     }
   }
