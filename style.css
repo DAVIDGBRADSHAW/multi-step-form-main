@@ -65,7 +65,8 @@ ul {
   margin-top: 10px;
   font-size: 11px;
   text-align: center;
-  width: 350px;
+  width: 375px;
+  margin: auto;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -582,5 +583,6 @@ ul {
   }
   .attribution {
     width: 900px;
+    margin: auto;
   }
 }
