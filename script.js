@@ -51,7 +51,7 @@ window.addEventListener("load", () => {
   function printMessagge(msg, num) {
     msg =
       msg ||
-      "This web page makes use of form validation. Make sure to Type your Name and Surname and use a valid email and a phone number similar to the one described in the form.";
+      "This Web Page makes use of form validation. Make sure to Type your Name and Surname and use a valid email and a phone number similar to the one described in the form.";
     infoBox.classList.add("message");
     block.classList.add("blockFrom");
     infoBoxMess.innerHTML = msg;
