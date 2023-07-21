@@ -10,7 +10,6 @@ window.addEventListener("load", () => {
   const infoBoxMess = document.querySelector(".print > h3");
   const closeScreen = document.querySelector(".print > div");
   const addPrice = document.querySelectorAll(".prc1");
-  const checkPlan = document.querySelectorAll(".bcolor");
   const block = document.querySelector("#container > div:first-of-type");
   const planBtn = document.getElementById("btn");
   const finalPrice = document.querySelector(".prc3");
@@ -51,7 +50,7 @@ window.addEventListener("load", () => {
   function printMessagge(msg, num) {
     msg =
       msg ||
-      "This Web Page makes use of form validation. Make sure to Type your Name and Surname and use a valid email and a phone number similar to the one described in the form.";
+      "This web page makes use of form validation. Make sure to Type your Name and Surname and use a valid email and a phone number similar to the one described in the form.";
     infoBox.classList.add("message");
     block.classList.add("blockFrom");
     infoBoxMess.innerHTML = msg;
