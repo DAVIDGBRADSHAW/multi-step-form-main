@@ -68,7 +68,7 @@ window.addEventListener("load", () => {
   (function () {
     "user strict";
     btn.onclick = () => {
-      if (click < formLen.length - 2 && true) {
+      if (click < formLen.length - 2 && formValidation()) {
         pageNumBackGround(click, 1);
         click++;
         left += leftL;
