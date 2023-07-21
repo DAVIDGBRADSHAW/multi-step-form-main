@@ -408,7 +408,7 @@ ul {
 }
 /******************End of JS Dom Manipulation*****************/
 
-@media (min-width: 440px) and (max-width: 1400px) {
+@media (min-width: 440px) and (max-width: 1600px) {
   #container {
     background-color: hsl(0, 0%, 100%);
     width: 900px;
