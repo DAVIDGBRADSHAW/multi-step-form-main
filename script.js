@@ -46,7 +46,6 @@ window.addEventListener("load", () => {
   let planBcolor = "Arcade";
   let last = "(Montly)";
   //   Information Box ===============================================
-  responsive(x);
   printMessagge();
   function printMessagge(msg, num) {
     msg =
@@ -69,7 +68,7 @@ window.addEventListener("load", () => {
   (function () {
     "user strict";
     btn.onclick = () => {
-      if (click < formLen.length - 2 && formValidation()) {
+      if (click < formLen.length - 2 && true) {
         pageNumBackGround(click, 1);
         click++;
         left += leftL;
@@ -83,7 +82,6 @@ window.addEventListener("load", () => {
         if (click >= 2) {
           backBtn();
           btn2.style.color = "hsl(231, 11%, 63%)";
-          console.log(click);
         }
         if (click > 0 && click < 2) {
           planType[0].classList.add("bcolor");
@@ -94,6 +92,7 @@ window.addEventListener("load", () => {
         left += leftL;
         form.style.left = "-" + `${left}` + "px";
         btnSection.className = "display";
+        click++;
       }
     };
     function backBtn() {
@@ -286,7 +285,6 @@ window.addEventListener("load", () => {
     planType[0].classList.add("bcolor");
     pickPrice = planType[0].getAttribute("value");
     planBcolor = document.querySelector(".bcolor .txt p:first-of-type");
-    console.log();
   };
 
   (function () {
@@ -344,20 +342,25 @@ window.addEventListener("load", () => {
       responsive(x);
     }, 100);
   });
- 
+  responsive(x);
   function responsive(maxWidth) {
     if (maxWidth.matches) {
       displayTxt("none");
       leftL = 350;
+      resizing();
     } else {
       displayTxt("block");
       leftL = 500;
+      resizing();
     }
+  }
+  function resizing() {
+    left = click * leftL;
+    form.style.left = "-" + click * leftL + "px";
   }
   function displayTxt(dis) {
     steps.forEach((step) => {
       step.style.display = dis;
-      form.style.left = "-" + 0 + "px";
     });
   }
   this.clearTimeout(doneResizing);
